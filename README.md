@@ -1,4 +1,4 @@
-# ActiveRecord PgBouncer Connection Adapter
+# ActiveRecord PgBouncer Connection Adapter [![Build Status](https://travis-ci.org/remind101/activerecord-pgbouncer.svg?branch=master)](https://travis-ci.org/remind101/activerecord-pgbouncer)
 
 When using PgBouncer, there are certain considerations to take into account:
 
