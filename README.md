@@ -22,9 +22,9 @@ This adds a `pgbouncer` adapter, which you can use in `config/database.yml` or `
 ```yaml
 production:
   adapter: pgbouncer
-  pooling_mode: transaction # Or `session`
+  pooling_mode: transaction # Can be `session`, `transaction`, or `statement`
 ```
 
 ```shell
-export DATABASE_URL=pgbouncer://user:pass@host/db
+export DATABASE_URL=pgbouncer://user:pass@host/db?pooling_mode=transaction
 ```
