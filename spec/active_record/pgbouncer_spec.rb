@@ -11,9 +11,7 @@ describe ActiveRecord::PgBouncer do
 
       ActiveRecord::Base.pgbouncer_connection({
         dbname: 'pgbouncer_test',
-        variables: {
-          statement_timeout: 15000,
-        }
+        pooling_mode: 'transaction'
       })
     end
 

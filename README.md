@@ -22,6 +22,7 @@ This adds a `pgbouncer` adapter, which you can use in `config/database.yml` or `
 ```yaml
 production:
   adapter: pgbouncer
+  pooling_mode: transaction # Or `session`
 ```
 
 ```shell
